@@ -1,0 +1,314 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, footer, header, nav, section {
+  display: block; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+figcaption, figure, main {
+  display: block; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted; }
+
+b, strong {
+  font-weight: inherit; }
+
+b, strong {
+  font-weight: bolder; }
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -.25em; }
+
+sup {
+  top: -.5em; }
+
+audio, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+img {
+  border-style: none; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; }
+
+button, input {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button; }
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  padding: .35em .75em .625em; }
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+progress {
+  display: inline-block;
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto; }
+
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+details, menu {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+canvas {
+  display: inline-block; }
+
+template {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+/*# sourceMappingURL=normalize.min.css.map */
+* {
+  box-sizing: border-box; }
+
+img {
+  width: 100%;
+  display: block; }
+
+#app-container {
+  padding: 10px;
+  font-family: 'Georgia', 'Palatino', serif; }
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid gray;
+  padding: 0 15px 5px 15px;
+  align-items: center;
+  justify-content: space-between; }
+  header img {
+    width: 150px; }
+  header div {
+    padding: 10px;
+    border: 2px solid black; }
+
+h1, h2, h3, h4 {
+  font-family: "Gill Sans", "Century Gothic", sans-serif; }
+
+.menu {
+  display: none; }
+  .menu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; }
+    .menu ul li {
+      padding: 0 25px;
+      border-left: 1px solid #fecd2f; }
+      .menu ul li a {
+        text-decoration: none;
+        color: #aaaaaa;
+        font-family: "Gill Sans", "Century Gothic", sans-serif; }
+
+h1 {
+  margin-top: 40px;
+  letter-spacing: 12px; }
+
+.subtitulo {
+  margin: 40px auto;
+  font-family: "Gill Sans", "Century Gothic", sans-serif; }
+  .subtitulo a {
+    color: black;
+    border-bottom: 2px solid #fecd2f;
+    text-decoration: none; }
+
+.texto p {
+  border-left: 1px solid #aaaaaa;
+  padding-left: 15px;
+  font-family: "Georgia", "Palatino", serif; }
+
+.cuadro-amarillo {
+  border: 3px solid #333333;
+  background: #fecd2f; }
+  .cuadro-amarillo p {
+    text-align: center;
+    font-family: "Gill Sans", "Century Gothic", sans-serif; }
+
+.img-chango {
+  margin: 0 auto;
+  padding-bottom: 10px;
+  width: 70%; }
+
+footer {
+  font-family: "Gill Sans", "Century Gothic", sans-serif; }
+
+.part-uno {
+  background: #333333;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin: 0; }
+  .part-uno .seccion-iconos {
+    padding: 25px; }
+    .part-uno .seccion-iconos i {
+      color: #3498db;
+      font-size: 30px;
+      padding: 0 10px; }
+  .part-uno .seccion {
+    padding: 25px; }
+    .part-uno .seccion a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 2px solid #fecd2f;
+      font-weight: bold;
+      font-size: 20px; }
+
+.part-dos {
+  background: #aaaaaa;
+  margin: 0;
+  padding: 20px; }
+  .part-dos h2 {
+    letter-spacing: 2px;
+    font-weight: 500; }
+
+.subscribe input {
+  width: 40%; }
+.subscribe button {
+  background: #fecd2f;
+  border: 0;
+  padding: 3px; }
+
+@media screen and (min-width: 768px) {
+  .item {
+    display: flex;
+    margin-bottom: 10px; }
+    .item p {
+      border: 0;
+      padding: 0; }
+    .item .texto {
+      padding: 10px; }
+
+  .cuadro-amarillo {
+    width: 70%;
+    margin: 0 auto; }
+
+  .img-chango {
+    margin-bottom: 20px; }
+
+  .part-uno {
+    display: flex;
+    flex-wrap: wrap; }
+    .part-uno .seccion {
+      width: 50%;
+      margin: 0;
+      padding: 40px; }
+
+  .part-dos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .part-dos .subscribe, .part-dos .follow {
+      border-left: 1px solid #333333;
+      padding-left: 20px; } }
+@media screen and (min-width: 1024px) {
+  header div {
+    display: none; }
+
+  .menu {
+    display: inline-flex; }
+
+  .part-uno .seccion {
+    width: 25%; }
+
+  .part-dos div {
+    font-size: 12px; } }
+
+/*# sourceMappingURL=styles.css.map */

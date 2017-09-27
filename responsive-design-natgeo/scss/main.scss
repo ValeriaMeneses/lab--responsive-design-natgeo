@@ -1,0 +1,198 @@
+@import "./imports/_normalize.scss";
+
+$yellow: #fecd2f;
+$dark-grey: #333333;
+$light-grey: #aaaaaa;
+$title: 'Gill Sans', 'Century Gothic', sans-serif;
+$fancy: 'Georgia', 'Palatino', serif;
+
+*{ box-sizing: border-box }
+
+img {
+   width: 100%;
+   display: block;
+}
+
+#app-container{
+  padding: 10px;
+  font-family: 'Georgia', 'Palatino', serif;
+}
+
+header{
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid gray;
+  padding: 0 15px 5px 15px;
+  align-items: center;
+  justify-content: space-between;
+  img{
+    width: 150px;
+  }
+  div{
+    padding: 10px;
+    border: 2px solid black;
+  }
+}
+h1, h2, h3, h4{
+  font-family: $title;
+}
+.menu{
+  display: none;
+  ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    li{
+      padding: 0 25px;
+      border-left: 1px solid $yellow;
+      a{
+        text-decoration: none;
+        color: $light-grey;
+        font-family: $title;
+      }
+    }
+  }
+}
+h1{
+  margin-top: 40px;
+  letter-spacing: 12px;
+}
+.subtitulo{
+  margin: 40px auto;
+  font-family: $title;
+  a{
+    color: black;
+    border-bottom: 2px solid $yellow;
+    text-decoration: none;
+  }
+}
+.texto{
+  p{
+    border-left: 1px solid $light-grey;
+    padding-left: 15px;
+    font-family: $fancy;
+  }
+}
+.cuadro-amarillo{
+  border: 3px solid $dark-grey;
+  background: $yellow;
+  p{
+    text-align: center;
+    font-family: $title;
+  }
+}
+.img-chango{
+  margin: 0 auto;
+  padding-bottom: 10px;
+  width: 70%;
+}
+footer{
+  font-family: $title;
+}
+.part-uno{
+  background: $dark-grey;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin: 0;
+    .seccion-iconos{
+      padding: 25px;
+      i{
+          color: #3498db;
+          font-size: 30px;
+          padding: 0 10px;
+        }
+      }
+  .seccion{
+    padding: 25px;
+    a{
+      color: white;
+      text-decoration: none;
+      border-bottom: 2px solid $yellow;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+}
+.part-dos{
+  background: $light-grey;
+  margin: 0;
+  padding: 20px;
+  h2{
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+}
+.subscribe{
+  input{
+    width: 40%;
+  }
+  button{
+    background: $yellow;
+    border: 0;
+    padding: 3px;
+  }
+}
+
+
+@media screen and (min-width:768px){
+
+  .item{
+    display: flex;
+    margin-bottom: 10px;
+    p{
+      border: 0;
+      padding: 0;
+    }
+    .texto{
+      padding: 10px;
+    }
+  }
+  .cuadro-amarillo{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .img-chango{
+    margin-bottom: 20px;
+  }
+  .part-uno{
+    display: flex;
+    flex-wrap: wrap;
+    .seccion{
+      width: 50%;
+      margin:0;
+      padding: 40px;
+    }
+  }
+  .part-dos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .subscribe, .follow{
+      border-left: 1px solid $dark-grey;
+      padding-left: 20px;
+    }
+  }
+}
+
+@media screen and (min-width:1024px){
+
+  header{
+    div{
+      display: none;
+    }
+  }
+  .menu{
+    display: inline-flex;
+  }
+  .part-uno{
+    .seccion{
+      width: 25%;
+    }
+  }
+  .part-dos{
+    div{
+      font-size: 12px;
+    }
+  }
+}
