@@ -309,6 +309,10 @@ footer {
     width: 25%; }
 
   .part-dos div {
-    font-size: 12px; } }
+    font-size: 12px; }
+
+  .small-contenedor {
+    width: 60%;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=styles.css.map */
